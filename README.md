@@ -36,4 +36,5 @@ https://mail.ru/
 Allure report
 ```
 pytest --alluredir=allure-results/
+allure serve allure-results/
 ```

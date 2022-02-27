@@ -1,0 +1,8 @@
+2022-02-27 21:43:32 [32mINFO[0m 
+
+2022-02-27 21:43:32 [32mINFO[0m ====== WebDriver manager ======
+2022-02-27 21:43:32 [32mINFO[0m Current google-chrome version is 98.0.4758
+2022-02-27 21:43:32 [32mINFO[0m Get LATEST chromedriver version for 98.0.4758 google-chrome
+2022-02-27 21:43:33 [32mINFO[0m Driver [C:\Users\Азат Аллагулов\.wdm\drivers\chromedriver\win32\98.0.4758.102\chromedriver.exe] found in cache
+2022-02-27 21:43:34 [32mINFO[0m Start app on https://mail.ru/
+2022-02-27 21:43:52 [32mINFO[0m Login with email account_for_test@bk.ru, password 0987Zxcvb
