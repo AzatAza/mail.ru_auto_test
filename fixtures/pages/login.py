@@ -24,7 +24,7 @@ class LoginPage(BasePage):
         self.click_element(locator=LoginLocators.EMAIL_INPUT)
         self.fill_element(data=data.email, locator=LoginLocators.EMAIL_INPUT)
         self.click_element(locator=LoginLocators.ENTER_PASSWORD_BTN)
-        time.sleep(1)  # We get the ElementNotInteractableException, if it doesn't use time.sleep
+        time.sleep(3)  # We get the ElementNotInteractableException, if it doesn't use time.sleep
         self.fill_element(data=data.password, locator=LoginLocators.PASSWORD_INPUT)
         self.click_element(locator=LoginLocators.SIGN_IN_BTN)
         self.frame_return()

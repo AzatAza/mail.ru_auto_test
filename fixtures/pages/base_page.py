@@ -6,7 +6,7 @@ class BasePage:
     def __init__(self, app):
         self.app = app
 
-    def custom_find_element(self, locator, wait_time=10) -> object():
+    def custom_find_element(self, locator, wait_time=10):
         element = WebDriverWait(self.app.driver, wait_time).until(
             EC.presence_of_element_located(locator),
             message=f"Cant{locator}",
