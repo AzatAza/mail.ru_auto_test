@@ -7,7 +7,6 @@ class LoginLocators:
     POPUP_WINDOW = (By.XPATH, "//iframe[@class='ag-popup__frame__layout__iframe']")
     EMAIL_INPUT = (By.XPATH, "//input[@name='username']")
     ENTER_PASSWORD_BTN = (By.XPATH, "//button[@type='submit']")
-    FRAME = (By.XPATH, '//*[@id="root"]/div/div/div/iframe')
     PASSWORD_INPUT = (By.XPATH, "//input[@name='password']")
     SIGN_IN_BTN = (By.XPATH, "//button[@type='submit']")
     NEW_LETTER_BTN = (By.XPATH, '//a[contains(@href, "compose")]')
