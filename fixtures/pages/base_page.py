@@ -35,14 +35,14 @@ class BasePage:
         if data:
             element.send_keys(data)
 
-    def get_text(self, locator, wait_time=10) -> str:
+    def get_text(self, locator, wait_time=10):
         """
         Get element text
         """
         element = self.custom_find_element(locator, wait_time)
         return element.text
 
-    def is_element_present(self, locator) -> object:
+    def is_element_present(self, locator):
         driver = self.app.driver
         element_found = True
         driver.implicitly_wait(1)
