@@ -6,7 +6,7 @@ class BasePage:
     def __init__(self, app):
         self.app = app
 
-    def custom_find_element(self, locator, wait_time=10):
+    def custom_find_element(self, locator, wait_time=10) -> object():
         element = WebDriverWait(self.app.driver, wait_time).until(
             EC.presence_of_element_located(locator),
             message=f"Cant{locator}",
@@ -16,6 +16,9 @@ class BasePage:
     def frame_switch(self, locator):
         WebDriverWait(self.app.driver, 10).until(
             EC.frame_to_be_available_and_switch_to_it(locator))
+
+    def frame_return(self):
+        self.app.driver.switch_to.default_content()
 
     def click_element(self, locator, wait_time=10):
         """
@@ -32,9 +35,19 @@ class BasePage:
         if data:
             element.send_keys(data)
 
-    def get_text(self, locator, wait_time=10):
+    def get_text(self, locator, wait_time=10) -> str:
         """
         Get element text
         """
         element = self.custom_find_element(locator, wait_time)
         return element.text
+
+    def is_element_present(self, locator) -> object:
+        driver = self.app.driver
+        element_found = True
+        driver.implicitly_wait(1)
+        try:
+            WebDriverWait(driver, 1).until(EC.presence_of_element_located(locator))
+        except Exception:
+            element_found = False
+        return element_found
