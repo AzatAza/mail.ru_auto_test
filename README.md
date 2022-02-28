@@ -1,5 +1,5 @@
 [![Test site https://mail.ru/](https://github.com/AzatAza/mail.ru_auto_test/actions/workflows/task's_CICD.yml/badge.svg)](https://github.com/AzatAza/mail.ru_auto_test/actions/workflows/task's_CICD.yml)
-# Test task "Лаборатория качества
+# Test task "Лаборатория качества"
 Selenium/Python
 
 ```
@@ -36,6 +36,8 @@ https://mail.ru/
 
 Allure report
 ```
+Run test:
 pytest --alluredir=allure-results/
+Check report:
 allure serve allure-results/
 ```
