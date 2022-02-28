@@ -16,10 +16,10 @@ def pytest_addoption(parser):
         help="Site's URL",
     ),
     parser.addoption(
-        "--email", action="store", default="account_for_test@bk.ru", help="email",
+        "--email", action="store", default="account_for_test2@bk.ru", help="email",
     ),
     parser.addoption(
-        "--password", action="store", default="0987Zxcvb", help="password",
+        "--password", action="store", default="StrongPassword", help="password",
     ),
     parser.addoption(
         "--headless",
